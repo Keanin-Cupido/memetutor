@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon';
+---
+
+<Layout title="404 - Page Not Found">
+  <div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-charcoal to-gray-900 px-4 text-center">
+    <Icon name="mdi:emoticon-sad-outline" class="w-32 h-32 text-accent-yellow mb-8 animate-bounce" />
+    <h1 class="text-4xl font-bold text-accent-yellow mb-4">404 - Meme Not Found</h1>
+    <p class="text-xl text-gray-300 mb-8">Oops! Looks like this meme has gone viral in another dimension.</p>
+    <a href="/" class="bg-accent-green text-charcoal font-bold py-3 px-6 rounded-full text-lg hover:bg-accent-yellow transition duration-300 inline-flex items-center">
+      Back to Meme School
+      <Icon name="mdi:arrow-right" class="w-6 h-6 ml-2" />
+    </a>
+  </div>
+</Layout>

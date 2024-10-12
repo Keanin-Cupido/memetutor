@@ -1,0 +1,70 @@
+---
+import { Icon } from 'astro-icon';
+---
+
+<section id="pricing" class="py-20 bg-gradient-to-b from-charcoal to-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12 text-accent-yellow">Choose Your Meme Path</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Meme Apprentice",
+          price: "$42.0",
+          features: [
+            "Basic meme formats",
+            "Weekly group sessions",
+            "Access to meme templates",
+            "Community forum access"
+          ],
+          icon: "mdi:emoticon-outline"
+        },
+        {
+          title: "Meme Lord",
+          price: "$69.420",
+          features: [
+            "All Apprentice features",
+            "Advanced meme techniques",
+            "1-on-1 meme reviews",
+            "Trend forecasting tools",
+            "Exclusive meme battles"
+          ],
+          icon: "mdi:emoticon-cool-outline",
+          popular: true
+        },
+        {
+          title: "Meme God",
+          price: "$420.69",
+          features: [
+            "All Lord features",
+            "Personal meme mentorship",
+            "Viral marketing strategies",
+            "Custom meme creation tools",
+            "Featured on our meme wall"
+          ],
+          icon: "mdi:emoticon-excited-outline"
+        }
+      ].map((plan) => (
+        <div class={`bg-gray-800 rounded-lg p-8 flex flex-col ${plan.popular ? 'border-4 border-accent-yellow transform scale-105' : ''}`}>
+          <div class="flex-1">
+            <div class="w-16 h-16 mx-auto bg-accent-green rounded-full flex items-center justify-center">
+              <Icon name={plan.icon} class="w-10 h-10 text-charcoal" />
+            </div>
+            <h3 class="text-2xl font-bold text-center my-4 text-accent-orange">{plan.title}</h3>
+            <p class="text-4xl font-bold text-center mb-6 text-white">{plan.price}<span class="text-xl font-normal">/month</span></p>
+            <ul class="space-y-3">
+              {plan.features.map((feature) => (
+                <li class="flex items-center">
+                  <Icon name="mdi:check-circle" class="w-5 h-5 text-accent-green mr-2" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <button class="mt-8 w-full bg-accent-yellow text-charcoal font-bold py-2 px-4 rounded hover:bg-accent-green transition duration-300">
+            Choose Plan
+          </button>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

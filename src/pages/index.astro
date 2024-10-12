@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import CourseHighlights from '../components/CourseHighlights.astro';
+import MemeShowcase from '../components/MemeShowcase.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Pricing from '../components/Pricing.astro';
+import FAQ from '../components/FAQ.astro';
+import Contact from '../components/Contact.astro';
+import MemeGenerator from '../components/MemeGenerator';
+import MemeOfTheDay from '../components/MemeOfTheDay.astro';
+---
+
+<Layout title="Meme Mastery - Learn to Create Viral Internet Memes">
+  <main class="overflow-hidden">
+    <Hero />
+    <About />
+    <CourseHighlights />
+    <MemeShowcase />
+    <Testimonials />
+    <Pricing />
+    <MemeGenerator client:load />
+    <FAQ />
+    <MemeOfTheDay />
+    <Contact />
+  </main>
+</Layout>

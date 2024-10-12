@@ -1,0 +1,37 @@
+---
+---
+
+<section id="faq" class="py-20 bg-gradient-to-b from-gray-900 to-charcoal">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12 text-accent-yellow">Frequently Asked Questions</h2>
+    <div class="space-y-6">
+      {[
+        {
+          question: "Do I need to be funny to create memes?",
+          answer: "Not at all! We'll teach you the secret sauce of meme humor. Even if you think you're as funny as a wet sock, our course will help you unleash your inner comedic genius!"
+        },
+        {
+          question: "How long does it take to become a Meme Lord?",
+          answer: "Rome wasn't built in a day, and neither was Grumpy Cat's empire. Most students start seeing results within a few weeks, but true Meme Lordship can take months of dedicated practice and lots of laughs along the way."
+        },
+        {
+          question: "Can I make money from memes?",
+          answer: "Absolutely! Many of our graduates have gone on to work with brands, create merchandise, or become social media influencers. We cover meme monetization strategies in our advanced courses."
+        },
+        {
+          question: "What if my memes don't go viral?",
+          answer: "Remember, even the greatest meme lords have flops. We teach you how to analyze your memes, learn from feedback, and improve your viral hit rate. Plus, the meme community is all about having fun – so don't take it too seriously!"
+        },
+        {
+          question: "Do you offer refunds if I'm not satisfied?",
+          answer: "We offer a 30-day money-back guarantee. If you're not creating fire memes and laughing your socks off within a month, we'll refund your tuition. No questions asked (but we might shed a tear or two)."
+        }
+      ].map((item) => (
+        <div class="bg-gray-800 rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2 text-accent-orange">{item.question}</h3>
+          <p class="text-gray-300">{item.answer}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
