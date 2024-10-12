@@ -7,15 +7,15 @@ const memes = [
   { title: "Expanding Brain", image: "/meme-of-the-day-5.webp" },
 ];
 
-const randomMeme = memes[Math.floor(Math.random() * memes.length)];
+const randomMeme = '/womanyellingatcat.jpg';
 ---
 
 <section class="py-20 bg-gradient-to-b from-charcoal to-gray-900">
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold text-center mb-12 text-accent-yellow">Meme of the Day</h2>
     <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
-      <h3 class="text-xl font-bold text-center mb-4 text-accent-orange">{randomMeme.title}</h3>
-      <img src={randomMeme.image} alt={randomMeme.title} class="w-full rounded-lg" />
+      <h3 class="text-xl font-bold text-center mb-4 text-accent-orange">{"Woman Yelling At Cat. A twist on the classic."}</h3>
+      <img src={randomMeme} alt={"woman yelling at cat"} class="w-full rounded-lg" />
       <p class="mt-4 text-center text-gray-300">Can you recreate this meme with your own twist?</p>
     </div>
   </div>

@@ -7,50 +7,50 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
         {
-          name: "Doge Lover",
-          avatar: "/avatar-1.webp",
-          quote: "Much learn. Very meme. Wow!",
+          name: "Ms. Oh Okay",
+          avatar: "/avatar-1.jpg",
+          quote: "I'm glad I plugged in my router so that I could use the internet for this. Much learn. Very meme. Wow!",
           rating: 5
         },
         {
           name: "Grumpy Cat",
-          avatar: "/avatar-2.webp",
+          avatar: "/avatar-2.jpg",
           quote: "I hate everything... except this course.",
           rating: 4
         },
         {
-          name: "Distracted Boyfriend",
-          avatar: "/avatar-3.webp",
-          quote: "Can't stop looking at other memes now!",
+          name: "Granny Smith, Recently turned 78.",
+          avatar: "/avatar-3.jpg",
+          quote: "My new obsession is memes now! Forget about all those shoes! Can't stop looking at other memes now!",
           rating: 5
         },
         {
-          name: "Success Kid",
-          avatar: "/avatar-4.webp",
-          quote: "Learned to meme. Internet fame achieved!",
+          name: "Craig Fergie",
+          avatar: "/avatar-4.jpg",
+          quote: "Learned to make amazon memes. Internet fame achieved!",
           rating: 5
         },
         {
           name: "Hide the Pain Harold",
-          avatar: "/avatar-5.webp",
+          avatar: "/avatar-5.jpg",
           quote: "Smiling through the pain of endless meme creation.",
           rating: 4
         },
         {
-          name: "Overly Attached GF",
-          avatar: "/avatar-6.webp",
-          quote: "I'll never let go of these meme skills!",
+          name: "GTA6",
+          avatar: "/avatar-6.jpg",
+          quote: "I learned to make memes before my existence",
           rating: 5
         }
       ].map((testimonial) => (
         <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
           <div class="flex items-center mb-4">
-            <img src={testimonial.avatar} alt={testimonial.name} class="w-12 h-12 rounded-full mr-4" />
+            <img src={testimonial.avatar} alt={testimonial.name} class="w-20 h-20 rounded-full mr-4 object-cover object-top" />
             <div>
               <h3 class="font-bold text-accent-orange">{testimonial.name}</h3>
               <div class="flex">
                 {Array.from({ length: testimonial.rating }).map(() => (
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent-yellow" viewBox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent-yellow " viewBox="0 0 20 20" fill="currentColor">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
